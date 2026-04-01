@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     flavor: 'Chocolat',
     weight: '180 g',
     price: 1500, // Estimated price in CFA
-    image: 'public/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (1).jpeg',
+    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (1).jpeg',
     ingredients: ['Blé transformé', 'Arôme naturel', 'Cacao'],
     description: 'Des céréales gourmandes parfaites pour se faire plaisir à tout moment.'
   },
@@ -28,7 +28,7 @@ export const PRODUCTS: Product[] = [
     flavor: 'Cacahuète',
     weight: '200 g',
     price: 1500, // Estimated price in CFA
-    image: 'public/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (2).jpeg',
+    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (2).jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     flavor: 'Cacahuète',
     weight: '200 g',
     price: 1500, // Estimated price in CFA
-    image: 'public/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (3).jpeg',
+    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (3).jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
     flavor: 'Cacahuète',
     weight: '200 g',
     price: 1500, // Estimated price in CFA
-    image: 'public/img/WhatsApp Image 2026-04-01 at 6.15.40 AM.jpeg',
+    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
