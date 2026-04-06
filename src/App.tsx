@@ -398,9 +398,8 @@ export default function App() {
 
       {/* Réseaux Sociaux */}
       <div className="flex items-center gap-6">
-        <a href="#" className="social-button"><Instagram className="w-6 h-6" /></a>
-        <a href="#" className="social-button"><Facebook className="w-6 h-6" /></a>
-        <a href="#" className="social-button"><MessageCircle className="w-6 h-6" /></a>
+        <a href="https://www.instagram.com/good.gouter?igsh=MW5mYXEzOWFrczE4YQ==" className="social-button"><Instagram className="w-6 h-6" /></a>
+        <a href="https://wa.me/2250748629148" className="social-button"><MessageCircle className="w-6 h-6" /></a>
       </div>
       
     </div>

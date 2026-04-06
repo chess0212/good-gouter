@@ -24,9 +24,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'cacahuete-200',
-    name: 'Good Goûter Cacahuète',
-    flavor: 'Cacahuète',
-    weight: '200 g',
+    name: 'Good Goûter Chocolat',
+    flavor: 'Chocolat',
+    weight: '180 g',
     price: 1500, // Estimated price in CFA
     image: '/img/good1.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
@@ -34,9 +34,9 @@ export const PRODUCTS: Product[] = [
   },
    {
     id: 'cacahuete-200',
-    name: 'Good Goûter Cacahuète',
-    flavor: 'Cacahuète',
-    weight: '200 g',
+    name: 'Good Goûter Chocolat',
+    flavor: 'Chocolat',
+    weight: '180 g',
     price: 1500, // Estimated price in CFA
     image: '/img/good2.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
@@ -44,9 +44,9 @@ export const PRODUCTS: Product[] = [
   },
    {
     id: 'cacahuete-200',
-    name: 'Good Goûter Cacahuète',
-    flavor: 'Cacahuète',
-    weight: '200 g',
+    name: 'Good Goûter Chocolat',
+    flavor: 'Chocolat',
+    weight: '180 g',
     price: 1500, // Estimated price in CFA
     image: '/img/good3.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
@@ -57,7 +57,7 @@ export const PRODUCTS: Product[] = [
     name: 'Good Goûter Cacahuète',
     flavor: 'Cacahuète',
     weight: '200 g',
-    price: 1500, // Estimated price in CFA
+    price: 2000, // Estimated price in CFA
     image: '/img/good5.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
@@ -67,7 +67,7 @@ export const PRODUCTS: Product[] = [
     name: 'Good Goûter Cacahuète',
     flavor: 'Cacahuète',
     weight: '200 g',
-    price: 1500, // Estimated price in CFA
+    price: 2000, // Estimated price in CFA
     image: '/img/good4.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
@@ -77,7 +77,7 @@ export const PRODUCTS: Product[] = [
     name: 'Good Goûter Cacahuète',
     flavor: 'Cacahuète',
     weight: '200 g',
-    price: 1500, // Estimated price in CFA
+    price: 2000, // Estimated price in CFA
     image: '/img/good6.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
     name: 'Good Goûter Cacahuète',
     flavor: 'Cacahuète',
     weight: '200 g',
-    price: 1500, // Estimated price in CFA
+    price: 2000, // Estimated price in CFA
     image: '/img/good7.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
