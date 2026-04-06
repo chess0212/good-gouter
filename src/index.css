@@ -13,8 +13,103 @@
   body {
     @apply bg-brand-cream text-brand-brown antialiased;
   }
+
+  /* Centrage automatique de toutes les sections de la page */
+  section {
+    @apply max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8;
+  }
 }
+
+/* --- STYLE DES PRODUITS --- */
+
+/* Conteneur de la grille : centré et responsive */
+.products-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 
+         max-w-5xl mx-auto mt-12;
+}
+
+/* Style de la carte produit "Gourmet" */
+.product-card {
+  @apply flex flex-col bg-white rounded-[2rem] overflow-hidden 
+         border border-brand-orange/10 shadow-sm hover:shadow-xl 
+         transition-all duration-300 hover:-translate-y-1;
+}
+
+/* Centrage des titres et textes de présentation */
+.section-title {
+  @apply text-center space-y-4 mb-12 max-w-2xl mx-auto;
+}
+
+.section-title h2 {
+  @apply text-3xl md:text-5xl font-bold text-brand-brown font-display;
+}
+
+/* --- STYLE DU FOOTER --- */
+
+.footer-container {
+  @apply bg-white border-t border-brand-orange/10 pt-16 pb-8 mt-20;
+}
+
+.footer-content {
+  @apply max-w-7xl mx-auto px-4 flex flex-col items-center text-center space-y-10;
+}
+
+/* Organisation des liens du footer en ligne sur PC, en colonne sur Mobile */
+.footer-links {
+  @apply flex flex-wrap justify-center gap-x-10 gap-y-4 text-sm font-medium text-brand-brown/70;
+}
+
+.footer-socials {
+  @apply flex justify-center gap-6;
+}
+
+/* --- UTILITAIRES --- */
 
 .glass-card {
   @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+/* Force le centrage parfait des éléments Flex */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+/* --- SECTION BESOIN D'AIDE --- */
+
+.help-card {
+  /* On réutilise la base glass-card mais avec des réglages spécifiques */
+  @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-2xl 
+         rounded-[3rem] p-10 md:p-16 text-center space-y-8
+         max-w-3xl mx-auto transition-all duration-500;
+}
+
+.help-card:hover {
+  @apply shadow-brand-orange/10 border-brand-orange/20;
+}
+
+/* Style pour le bouton d'appel téléphonique */
+.contact-pill {
+  @apply flex items-center gap-4 px-8 py-4 bg-white rounded-2xl 
+         shadow-sm border border-brand-orange/10 
+         hover:shadow-xl hover:border-brand-orange/30 hover:-translate-y-1 
+         transition-all duration-300 active:scale-95;
+}
+
+/* Style pour les icônes de réseaux sociaux */
+.social-button {
+  @apply p-4 bg-white rounded-full shadow-sm border border-brand-orange/5
+         text-brand-brown hover:text-brand-orange hover:shadow-lg 
+         hover:-rotate-12 transition-all duration-300;
+}
+
+/* Animation douce pour l'apparition */
+.fade-in-view {
+  @apply opacity-0 translate-y-10;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    @apply opacity-100 translate-y-0;
+  }
 }

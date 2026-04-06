@@ -5,15 +5,15 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  ShoppingBag, 
-  Phone, 
-  Instagram, 
-  Facebook, 
-  MessageCircle, 
-  X, 
-  Plus, 
-  Minus, 
+import {
+  ShoppingBag,
+  Phone,
+  Instagram,
+  Facebook,
+  MessageCircle,
+  X,
+  Plus,
+  Minus,
   CheckCircle2,
   Info,
   Coffee,
@@ -37,15 +37,15 @@ const Navbar = ({ onOpenCart }: { onOpenCart: () => void }) => {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 bg-brand-brown rounded-full flex items-center justify-center text-white font-bold text-xs text-center leading-tight">
-            Good<br/>Goûter
+           <img src="\img\logogood.jpeg" alt="" />
           </div>
           <span className="font-bold text-xl tracking-tight hidden sm:block">Good Goûter</span>
         </div>
-        
+
         <div className="flex items-center gap-6">
           <a href="#produits" className="text-sm font-medium hover:text-brand-orange transition-colors">Produits</a>
           <a href="#services" className="text-sm font-medium hover:text-brand-orange transition-colors">Services</a>
-          <button 
+          <button
             onClick={onOpenCart}
             className="relative p-2 hover:bg-brand-orange/10 rounded-full transition-colors"
           >
@@ -65,7 +65,7 @@ const Navbar = ({ onOpenCart }: { onOpenCart: () => void }) => {
 const Hero = () => (
   <section className="relative pt-32 pb-20 px-4 overflow-hidden">
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -83,14 +83,14 @@ const Hero = () => (
           Parfaites pour se faire plaisir à tout moment. Découvrez le goût authentique de nos céréales artisanales.
         </p>
         <div className="flex flex-wrap gap-4">
-          <a 
-            href="#produits" 
+          <a
+            href="#produits"
             className="px-8 py-4 bg-brand-brown text-white rounded-full font-bold hover:bg-brand-brown/90 transition-all shadow-lg hover:shadow-brand-brown/20"
           >
             Commander maintenant
           </a>
-          <a 
-            href="https://wa.me/2250748629148" 
+          <a
+            href="https://wa.me/2250748629148"
             target="_blank"
             className="px-8 py-4 bg-white border-2 border-brand-brown text-brand-brown rounded-full font-bold hover:bg-brand-brown hover:text-white transition-all"
           >
@@ -98,17 +98,17 @@ const Hero = () => (
           </a>
         </div>
       </motion.div>
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         className="relative"
       >
         <div className="absolute inset-0 bg-brand-orange/20 rounded-full blur-3xl -z-10 transform translate-x-10 translate-y-10" />
-        <img 
+        <img
           src='img\WhatsApp Image 2026-04-01 at 6.15.40 AM (3).jpeg'
-          alt="Cereal Bowl" 
+          alt="Cereal Bowl"
           className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]"
           referrerPolicy="no-referrer"
         />
@@ -125,15 +125,15 @@ const ProductCard = ({ product }: { product: Product }) => {
   const addItem = useCart((state) => state.addItem);
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-brand-orange/5"
     >
       <div className="relative aspect-square overflow-hidden">
-        <img 
-          src={product.image} 
+        <img
+          src={product.image}
           alt={product.name}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           referrerPolicy="no-referrer"
@@ -161,7 +161,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         </div>
         <div className="flex items-center justify-between pt-2">
           <span className="text-lg font-bold text-brand-brown">{product.price} FCFA</span>
-          <button 
+          <button
             onClick={() => addItem(product)}
             className="p-3 bg-brand-orange text-white rounded-full hover:bg-brand-accent transition-colors shadow-lg shadow-brand-orange/20"
           >
@@ -182,7 +182,7 @@ const Services = () => (
           Plus que de simples céréales, nous vous accompagnons pour des moments gourmands inoubliables.
         </p>
       </div>
-      
+
       <div className="grid md:grid-cols-3 gap-8">
         {[
           {
@@ -201,7 +201,7 @@ const Services = () => (
             desc: "Besoin d'aide ou d'une commande spéciale ? Contactez notre équipe via WhatsApp ou téléphone 7j/7."
           }
         ].map((service, i) => (
-          <motion.div 
+          <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -241,14 +241,14 @@ const CartDrawer = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void 
     <AnimatePresence>
       {isOpen && (
         <>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
             className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[60]"
           />
-          <motion.div 
+          <motion.div
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -285,14 +285,14 @@ const CartDrawer = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void 
                       </div>
                       <p className="text-xs text-gray-500">{item.price} FCFA</p>
                       <div className="flex items-center gap-3">
-                        <button 
+                        <button
                           onClick={() => updateQuantity(item.id, item.quantity - 1)}
                           className="w-8 h-8 rounded-full border flex items-center justify-center hover:bg-gray-50"
                         >
                           <Minus className="w-3 h-3" />
                         </button>
                         <span className="text-sm font-bold">{item.quantity}</span>
-                        <button 
+                        <button
                           onClick={() => updateQuantity(item.id, item.quantity + 1)}
                           className="w-8 h-8 rounded-full border flex items-center justify-center hover:bg-gray-50"
                         >
@@ -311,7 +311,7 @@ const CartDrawer = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void 
                   <span>Total</span>
                   <span>{total()} FCFA</span>
                 </div>
-                <button 
+                <button
                   onClick={handleCheckout}
                   disabled={isOrdered}
                   className={cn(
@@ -346,81 +346,87 @@ export default function App() {
   return (
     <div className="min-h-screen font-sans">
       <Navbar onOpenCart={() => setIsCartOpen(true)} />
-      
+
       <main>
         <Hero />
-        
-        <section id="produits" className="py-24 px-4 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-brand-brown">Nos Céréales</h2>
-                <p className="text-brand-brown/60 max-w-md">
-                  Des recettes artisanales préparées avec soin en Côte d'Ivoire pour votre plus grand plaisir.
-                </p>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex items-center gap-2 text-sm font-bold text-brand-orange">
-                  <Coffee className="w-5 h-5" /> Saveur Chocolat
-                </div>
-                <div className="flex items-center gap-2 text-sm font-bold text-brand-accent">
-                  <Milk className="w-5 h-5" /> Saveur Cacahuète
-                </div>
-              </div>
+        <section id="produits">
+          <div className="section-title">
+            <h2>Nos Céréales Artisanales</h2>
+            <p>Découvrez le goût authentique de nos créations faites avec amour.</p>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 text-sm font-bold text-brand-orange">
+              <Coffee className="w-6 h-5" /> Saveur Chocolat
             </div>
-            
-            <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {PRODUCTS.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+            <div className="flex items-center gap-2 text-sm font-bold text-brand-accent">
+              <Milk className="w-5 h-5" /> Saveur Cacahuète
             </div>
           </div>
+
+          <div className="products-grid">
+            {PRODUCTS.map(product => <ProductCard key={product.id} product={product} />)}
+          </div>
         </section>
+        
 
         <Services />
 
-        <section className="py-24 px-4 bg-brand-cream">
-          <div className="max-w-3xl mx-auto glass-card p-12 rounded-[3rem] text-center space-y-8">
-            <h2 className="text-3xl font-bold">Besoin d'aide ?</h2>
-            <p className="text-brand-brown/70">
-              Notre équipe d'assistance est à votre écoute pour toute question sur nos produits ou vos commandes.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a 
-                href="tel:+2250748629148" 
-                className="flex items-center gap-3 px-6 py-3 bg-white rounded-2xl shadow-sm border border-brand-orange/10 hover:shadow-md transition-all"
-              >
-                <Phone className="w-5 h-5 text-brand-orange" />
-                <span className="font-bold">(+225) 07 48 62 91 48</span>
-              </a>
-              <div className="flex gap-4">
-                <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:text-brand-orange transition-colors"><Instagram /></a>
-                <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:text-brand-orange transition-colors"><Facebook /></a>
-                <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:text-brand-orange transition-colors"><MessageCircle /></a>
-              </div>
-            </div>
-          </div>
-        </section>
+       <section className="py-24 px-4 bg-brand-cream flex-center">
+  <div className="help-card fade-in-view">
+    {/* Titre & Texte */}
+    <div className="space-y-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-brand-brown font-display">
+        Besoin d'aide ?
+      </h2>
+      <p className="text-brand-brown/70 max-w-xl mx-auto text-lg leading-relaxed">
+        Notre équipe d'assistance est à votre écoute pour toute question sur nos produits ou vos commandes.
+      </p>
+    </div>
+
+    {/* Boutons d'action centrés */}
+    <div className="flex flex-col items-center justify-center gap-8">
+      
+      {/* Bouton Téléphone */}
+      <a href="tel:+2250748629148" className="contact-pill group">
+        <div className="p-2 bg-brand-orange/10 rounded-lg group-hover:bg-brand-orange group-hover:text-white transition-colors">
+          <Phone className="w-6 h-6 text-brand-orange group-hover:text-white" />
+        </div>
+        <span className="font-bold text-lg text-brand-brown">
+          (+225) 07 48 62 91 48
+        </span>
+      </a>
+
+      {/* Réseaux Sociaux */}
+      <div className="flex items-center gap-6">
+        <a href="#" className="social-button"><Instagram className="w-6 h-6" /></a>
+        <a href="#" className="social-button"><Facebook className="w-6 h-6" /></a>
+        <a href="#" className="social-button"><MessageCircle className="w-6 h-6" /></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
       </main>
 
       <footer className="bg-white py-12 border-t border-brand-orange/10">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-brand-brown rounded-full flex items-center justify-center text-white font-bold text-xs text-center leading-tight">
-              Good<br/>Goûter
+                        <img src="\img\logogood.jpeg" alt="" />
+
             </div>
             <div>
               <p className="font-bold text-lg">Good Goûter</p>
               <p className="text-xs text-brand-brown/50">© 2026 Tous droits réservés.</p>
             </div>
           </div>
-          
+
           <div className="flex gap-8 text-sm font-medium text-brand-brown/60">
             <a href="#" className="hover:text-brand-orange transition-colors">Mentions Légales</a>
             <a href="#" className="hover:text-brand-orange transition-colors">Politique de Confidentialité</a>
             <a href="#" className="hover:text-brand-orange transition-colors">Contact</a>
           </div>
-          
+
           <div className="flex items-center gap-2 text-sm font-bold text-brand-orange">
             <span className="w-2 h-2 bg-brand-orange rounded-full animate-pulse" />
             Disponible en Côte d'Ivoire

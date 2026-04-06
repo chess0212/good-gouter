@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     flavor: 'Chocolat',
     weight: '180 g',
     price: 1500, // Estimated price in CFA
-    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (1).jpeg',
+    image: '/img/good.jpeg',
     ingredients: ['Blé transformé', 'Arôme naturel', 'Cacao'],
     description: 'Des céréales gourmandes parfaites pour se faire plaisir à tout moment.'
   },
@@ -28,7 +28,7 @@ export const PRODUCTS: Product[] = [
     flavor: 'Cacahuète',
     weight: '200 g',
     price: 1500, // Estimated price in CFA
-    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (2).jpeg',
+    image: '/img/good1.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
@@ -38,7 +38,27 @@ export const PRODUCTS: Product[] = [
     flavor: 'Cacahuète',
     weight: '200 g',
     price: 1500, // Estimated price in CFA
-    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM (3).jpeg',
+    image: '/img/good2.jpeg',
+    ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
+    description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
+  },
+   {
+    id: 'cacahuete-200',
+    name: 'Good Goûter Cacahuète',
+    flavor: 'Cacahuète',
+    weight: '200 g',
+    price: 1500, // Estimated price in CFA
+    image: '/img/good3.jpeg',
+    ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
+    description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
+  },
+   {
+    id: 'cacahuete-200',
+    name: 'Good Goûter Cacahuète',
+    flavor: 'Cacahuète',
+    weight: '200 g',
+    price: 1500, // Estimated price in CFA
+    image: '/img/good5.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
@@ -48,7 +68,27 @@ export const PRODUCTS: Product[] = [
     flavor: 'Cacahuète',
     weight: '200 g',
     price: 1500, // Estimated price in CFA
-    image: '/img/WhatsApp Image 2026-04-01 at 6.15.40 AM.jpeg',
+    image: '/img/good4.jpeg',
+    ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
+    description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
+  },
+   {
+    id: 'cacahuete-200',
+    name: 'Good Goûter Cacahuète',
+    flavor: 'Cacahuète',
+    weight: '200 g',
+    price: 1500, // Estimated price in CFA
+    image: '/img/good6.jpeg',
+    ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
+    description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
+  },
+   {
+    id: 'cacahuete-200',
+    name: 'Good Goûter Cacahuète',
+    flavor: 'Cacahuète',
+    weight: '200 g',
+    price: 1500, // Estimated price in CFA
+    image: '/img/good7.jpeg',
     ingredients: ['Blé', 'Cacahuète', 'Arôme naturel'],
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
