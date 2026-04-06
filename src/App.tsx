@@ -107,7 +107,7 @@ const Hero = () => (
       >
         <div className="absolute inset-0 bg-brand-orange/20 rounded-full blur-3xl -z-10 transform translate-x-10 translate-y-10" />
         <img
-          src='img\WhatsApp Image 2026-04-01 at 6.15.40 AM (3).jpeg'
+          src='img\good7.jpeg'
           alt="Cereal Bowl"
           className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]"
           referrerPolicy="no-referrer"
