@@ -23,7 +23,7 @@ export const PRODUCTS: Product[] = [
     description: 'Des céréales gourmandes parfaites pour se faire plaisir à tout moment.'
   },
   {
-    id: 'cacahuete-200',
+    id: 'chocolat-180',
     name: 'Good Goûter Chocolat',
     flavor: 'Chocolat',
     weight: '180 g',
@@ -33,7 +33,7 @@ export const PRODUCTS: Product[] = [
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
    {
-    id: 'cacahuete-200',
+    id: 'chocolat-180',
     name: 'Good Goûter Chocolat',
     flavor: 'Chocolat',
     weight: '180 g',
@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     description: 'Idéal au petit-déjeuner, au goûter ou en encas. À consommer tel quel ou accompagné de lait.'
   },
    {
-    id: 'cacahuete-200',
+    id: 'chocolat-180',
     name: 'Good Goûter Chocolat',
     flavor: 'Chocolat',
     weight: '180 g',
